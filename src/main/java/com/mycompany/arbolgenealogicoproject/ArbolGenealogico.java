@@ -75,7 +75,9 @@ public class ArbolGenealogico {
     private String obtenerParentezco(String parentezco, String nombre) {
         switch (parentezco) {
             case "Hijo":
+            case "Hija":
             case "Madre":
+            case "Padre":
             case "Abuela materna":
             case "Abuelo materno":
             case "Abuela paterna":
@@ -84,6 +86,10 @@ public class ArbolGenealogico {
             case "Bisabuela materna":
             case "Bisabuelo paterno":
             case "Bisabuela paterna":
+            case "Tatarabuelo materno":
+            case "Tatarabuela materna":
+            case "Tataratatarabuelo materno":
+            case "Tataratatarabuela materna":
                 return parentezco;
             default:
                 return "Desconocido";
